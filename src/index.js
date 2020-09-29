@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { toast, Slide } from 'react-toastify';
 import './index.css';
-import App from './App';
+import Users from './containers/Users';
 import * as serviceWorker from './serviceWorker';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import './styles/Users.css';
+import 'react-toastify/dist/ReactToastify.min.css';
+import 'react-confirm-alert/src/react-confirm-alert.css';
+
+
+toast.configure({
+  autoClose: 2000,
+  hideProgressBar: true,
+  pauseOnHover: false,
+  transition: Slide,
+  toastClassName: 'toast-container',
+  bodyClassName: 'toast-body',
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Users />
   </React.StrictMode>,
   document.getElementById('root')
 );

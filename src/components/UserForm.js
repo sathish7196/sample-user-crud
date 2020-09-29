@@ -52,24 +52,24 @@ const UserForm = (props) => {
                                     <div className="row">
                                         <div className="col-md-7 form-group">
                                             <label htmlFor="name">Name:</label>
-                                            <input type="text" name="name" className="form-control" onChange={handleInputChange} placeholder="Enter Your Name" />
+                                            <input type="text" name="name" className="form-control" required onChange={handleInputChange} placeholder="Enter Your Name" />
                                         </div>
                                         <div className="col-md-5 form-group ">
                                             <label htmlFor="age">Age:</label>
-                                            <input type="number" name="age" className="form-control" onChange={handleInputChange} placeholder="Enter Your Age" />
+                                            <input type="number" name="age" className="form-control" required onChange={handleInputChange} placeholder="Enter Your Age" />
                                         </div>
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="emailId">Email ID:</label>
-                                        <input type="email" name="emailId" className="form-control" onChange={handleInputChange} placeholder="Enter Your Email ID" />
+                                        <input type="email" name="emailId" className="form-control" required onChange={handleInputChange} placeholder="Enter Your Email ID" />
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="mobileNo">Mobile No :</label>
-                                        <input type="number" name="mobileNo" className="form-control" onChange={handleInputChange} placeholder="Enter Your Mobile No" />
+                                        <input type="number" name="mobileNo" className="form-control" required onChange={handleInputChange} placeholder="Enter Your Mobile No" />
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="address">Address:</label>
-                                        <textarea className="form-control" name="address" rows="5" onChange={handleInputChange}></textarea>
+                                        <textarea className="form-control" name="address" rows="5" required onChange={handleInputChange}></textarea>
                                     </div>
                                     <button type="submit" className="btn btn-outline-primary float-right">Submit</button>
                                 </form>
